@@ -10,7 +10,7 @@
     </a>
   </li>
   <ng-container *ngFor="let page of [].constructor(3); let i = index">
-    <li class="page-item btn btn-success"
+    <li class="page-item"
         [class.active]="currentPage === i+1"
         *ngIf="lastPage > 1 && i+1 <= lastPage">
       <a class="page-link" (click)="setNewPage(currentPage = i+1)">
